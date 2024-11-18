@@ -1,0 +1,253 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+.portal {
+    color: red;
+    font-weight: bold;
+}
+
+#nav_bar {
+    border: none;
+    box-shadow: 4px 4px rgb(216, 214, 214);
+    width: 100%;
+}
+
+.login {
+    margin-right: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.signup {
+    color: white;
+    background-color: blue;
+    margin-right: 10px;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_item {
+    list-style-type: none;
+    color: black;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.container {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_items {
+    height: 50px;
+    margin-left: auto;
+    margin-top: -30px;
+}
+
+.badge_item {
+    border-radius: 25px;
+    width: 210px;
+    color: rgb(255, 0, 119);
+    font-weight: bold;
+    background-color: rgb(240, 239, 239);
+    padding: 5px;
+    margin: auto;
+}
+
+.heading1 {
+    width: 450px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.dream {
+    color: blue;
+}
+
+.para_1 {
+    text-align: center;
+}
+
+.search_bar {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search_1 {
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 4px 4px rgb(216, 214, 214);
+}
+
+.search_bar2 {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search_2 {
+    border: none;
+    padding: 15px;
+    padding-left: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 4px 4px rgb(216, 214, 214);
+    background-color: rgb(11, 223, 46);
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    
+    margin: auto;
+}
+
+.card_1, .card_2, .card_3 {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 15px 5px rgb(216, 214, 214);
+    width: 100%;
+    
+}
+#card_1, #card_2, #card_3{
+    margin-right: 20px;
+}
+.badge_item2 {
+    border-radius: 25px;
+    width: 210px;
+    color: rgb(196, 59, 224);
+    font-weight: bold;
+    background-color: rgb(172, 171, 171);
+    padding: 2px;
+    margin: auto;
+    margin-top: 5px;
+}
+.badge_content1,.badge_content2{
+    padding-left: 15px;
+}
+.heading2{
+    margin-top: 50px;
+    margin-left: 120px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 576px) {
+
+    /* Navbar styling */
+    #nav_bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar_items {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+        
+    }
+
+    .navbar_items ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* Headings */
+    .heading1 {
+        width: 100%;
+        font-size: 1.75rem;
+    }
+    
+
+    .para_1 {
+        padding: 0 10px;
+    }
+
+    /* Search Bar */
+    .search_bar, .search_bar2 {
+        width: 100%;
+    }
+
+    #search_1 {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    /* Cards */
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_1, .card_2, .card_3 {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-left: 10x;
+    }
+
+    /* Badge */
+    .badge_item, .badge_item2 {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
+/* Mobile Styles */
+/* Mobile Styles */
+@media only screen and (max-width: 576px) {
+
+    /* Navbar Items Hidden by Default */
+    .navbar_items {
+        display: none;
+    }
+
+    /* Show the toggle button on mobile */
+    .navbar-toggler {
+        display: block;
+        background-color: white;
+        color: black;
+        border: none;
+        font-size: 20px;
+        padding: 10px;
+        cursor: pointer;
+        margin-left: 10px;  /* Adjusted margin */
+    }
+    
+    /* Active state when toggled */
+    .navbar_items.active {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Adjust flex alignment for the form */
+    form.d-flex {
+        display: flex;
+        align-items: center;
+    }
+}
+
